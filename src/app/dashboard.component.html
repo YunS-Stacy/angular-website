@@ -1,0 +1,9 @@
+<h3>Top Labels</h3>
+<div class="grid grid-pad">
+    <a *ngFor="let label of labels" 
+    [routerLink]="['/detail', label.group, label.name]"
+    class="col-1-4">
+        <div class="module label"></div>
+        <h4>{{label.name}}</h4>
+    </a>
+</div>
