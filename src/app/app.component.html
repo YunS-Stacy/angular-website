@@ -1,7 +1,15 @@
-<h1>{{title}}</h1>
-<nav>
-     <a routerLink="/dashboard" routerLinkActivate="active">Background</a> 
-     <a routerLink="/labels" routerLinkActivate="active">Labels</a> 
-</nav>
+<section class='left' style="width: 40vw">
+    <h1>{{title}}</h1>
+    <nav>
+        <a routerLink="/dashboard" routerLinkActivate="active">Background</a>
+        <a routerLink="/labels" routerLinkActivate="active">Labels</a>
+    </nav>
+</section>
+
+<section class='right' style="width: 60vw"> 
+    <app-work-grid>
+    </app-work-grid>
+    <!-- <router-outlet></router-outlet> -->
+</section>
+
 <app-background></app-background>
-<!-- <router-outlet></router-outlet> -->
